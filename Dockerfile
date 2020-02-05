@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.8
 LABEL maintainer="<Aditya Prima> aditya.prima@qti.co.id"
 
 # Add s6-overlay
