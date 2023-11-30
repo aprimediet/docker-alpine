@@ -6,11 +6,6 @@ LABEL maintainer="<Aditya Prima> aprimediet@gmail.com"
 # Add s6-overlay
 ENV S6_OVERLAY_VERSION=v3.1.5.0
 
-# Add dependency mirror
-RUN touch /etc/apk/repositories
-RUN echo http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/main >> /etc/apk/repositories
-RUN echo http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/community >> /etc/apk/repositories
-
 # Install base dependencies
 RUN apk add --update --no-cache bash libcap curl
 
